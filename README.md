@@ -3,6 +3,13 @@
 # Preguntes de reflexió
 
 ## 1. Afegiu un endpoint que cerqui per un camp de tipus String on feu servir regex. Afegiu el que calgui al servei, repositori, etc.
+![image](https://github.com/user-attachments/assets/3aca00a9-a654-472f-99f6-3375728196eb)
+![image](https://github.com/user-attachments/assets/5fc9b2c8-f27f-462b-a630-30312cc2d57c)
+
+![image](https://github.com/user-attachments/assets/12db2aa7-1f82-4d74-a16c-87da5d4c555a)
+![image](https://github.com/user-attachments/assets/336ebd91-b2fb-4e46-ae8e-5ed3b6365779)
+
+
 
 ## 2. Què caracteritza una api reactiva com aquesta i què la fa diferent d’una api síncrona amb MVC com les treballades anteriorment?
 Una API reactiva és asíncrona i no bloquejant: processa les dades a mesura que arriben, sense ocupar fils innecessàriament. És ideal per a entorns amb moltes peticions o operacions lentes. 
