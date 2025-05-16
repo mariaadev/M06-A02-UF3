@@ -32,9 +32,8 @@ public class StudentController {
     }
 
     @PostMapping("/save") 
-    public String inserirStudent(@RequestBody StudentDTO studentDTO){
-        studentService.save(studentDTO);
-        return "Estudent insertat amb éxit";
+    public Mono<Student> inserirStudent(@RequestBody StudentDTO studentDTO){
+        return studentService.save(studentDTO);
     }
 
     @GetMapping("/{Id}")
@@ -51,10 +50,13 @@ public class StudentController {
     public Mono<Student> updateStudent(@RequestBody StudentDTO dto) {
         return studentService.update(dto);
     }
+
     @DeleteMapping("/{Id}")
     public Mono<Void> deleteStudent(@PathVariable String id) {
         return studentService.delete(id);
     }
+
+
 
 
 }
