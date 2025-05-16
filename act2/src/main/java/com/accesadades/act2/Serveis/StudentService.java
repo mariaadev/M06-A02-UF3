@@ -1,6 +1,6 @@
 package com.accesadades.act2.Serveis;
 import com.accesadades.act2.DTO.StudentDTO;
-import com.accesadades.act2.Modal.Student;
+import com.accesadades.act2.Model.Student;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
