@@ -4,7 +4,7 @@ import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 import org.springframework.stereotype.Repository;
 
-import com.accesadades.act2.Modal.Student;
+import com.accesadades.act2.Model.Student;
 
 @Repository
 @EnableReactiveMongoRepositories
