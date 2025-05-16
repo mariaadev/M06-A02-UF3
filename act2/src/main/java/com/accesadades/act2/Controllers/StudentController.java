@@ -56,7 +56,7 @@ public class StudentController {
     }
 
     @DeleteMapping("/deleteStudent/{Id}")
-    public Mono<Void> deleteStudent(@PathVariable String id) {
+    public Mono<Void> deleteStudent(@RequestParam String id) {
         return studentService.delete(id);
     }
 
