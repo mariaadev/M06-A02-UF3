@@ -1,10 +1,13 @@
 package com.accesadades.act2.Serveis;
+import org.springframework.stereotype.Service;
+
 import com.accesadades.act2.DTO.StudentDTO;
 import com.accesadades.act2.Model.Student;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Service
 public interface StudentService {
     Mono<Student> save(StudentDTO dto); 
     Mono<Student> findById(String id); 
