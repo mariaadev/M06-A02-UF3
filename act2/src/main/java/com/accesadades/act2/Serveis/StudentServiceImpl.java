@@ -65,11 +65,7 @@ public class StudentServiceImpl implements StudentService {
             );
     }
 
-    public Flux<Student> findByBirthYear(){
-       return studentRepo.findAll()
-        .filter(student -> {
-            int year = student.getBirth_year();
-            return year >= 1990 && year <= 1999;
-        });
+    public Flux<Student> findByBirthYear() {
+        return studentRepo.findByBirthDatyInNineties();
     }
 }

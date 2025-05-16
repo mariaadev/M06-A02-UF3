@@ -1,5 +1,6 @@
 package com.accesadades.act2.Respositoris;
 
+import org.springframework.data.mongodb.repository.Query;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 import org.springframework.stereotype.Repository;
@@ -12,5 +13,7 @@ import reactor.core.publisher.Flux;
 @EnableReactiveMongoRepositories
 
 public interface StudentRepo extends ReactiveMongoRepository<Student, String>{
-    Flux<Student> findByBirthYear();
+    
+    @Query("{ 'birth_daty': { $regex: '^199' } }")
+    Flux<Student> findByBirthDatyInNineties();
 }
