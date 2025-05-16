@@ -14,6 +14,6 @@ import reactor.core.publisher.Flux;
 
 public interface StudentRepo extends ReactiveMongoRepository<Student, String>{
     
-    @Query("{ 'birth_daty': { $regex: '^199' } }")
+    @Query("{ 'birth_daty': { $gte: 1990, $lte: 1999 } }")
     Flux<Student> findByBirthDatyInNineties();
 }
