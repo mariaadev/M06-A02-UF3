@@ -24,7 +24,8 @@ public class StudentController {
 
     @PostMapping("/save") 
     public String inserirStudent(@RequestBody StudentDTO studentDTO){
-        studentService.save()
+        studentService.save(studentDTO);
+        return "Estudent insertat amb éxit";
     }
 
     @GetMapping("/{Id}") 
