@@ -63,5 +63,13 @@ public class StudentServiceImpl implements StudentService {
                 dto.birth_year(),
                 dto.dni()
             );
-        }
+    }
+
+    public Flux<Student> findByBirthYear(){
+       return studentRepo.findAll()
+        .filter(student -> {
+            int year = student.getBirth_year();
+            return year >= 1990 && year <= 1999;
+        });
+    }
 }
