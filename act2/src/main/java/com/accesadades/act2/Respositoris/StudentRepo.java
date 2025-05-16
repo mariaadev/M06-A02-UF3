@@ -16,4 +16,7 @@ public interface StudentRepo extends ReactiveMongoRepository<Student, String>{
     
     @Query("{ 'birth_daty': { $gte: 1990, $lte: 1999 } }")
     Flux<Student> findByBirthDatyInNineties();
+
+    @Query("{ 'name': { $regex: ?0, $options: 'i' } }")
+    Flux<Student> findByNameMatchingRegex(String regex);
 }

@@ -65,6 +65,11 @@ public class StudentController {
         return studentServiceImpl.findByBirthYear();
     }
 
+    @GetMapping("/cercaNameAcabatEn")
+    public Flux<Student> cercarStudentsAcabatsEn(String sufix){
+        return studentServiceImpl.findByNameEndingWith(sufix);
+    }
+
 
 
 

@@ -68,4 +68,9 @@ public class StudentServiceImpl implements StudentService {
     public Flux<Student> findByBirthYear() {
         return studentRepo.findByBirthDatyInNineties();
     }
+
+    public Flux<Student> findByNameEndingWith(String suffix) {
+        String regex = suffix + "$"; 
+        return studentRepo.findByNameMatchingRegex(regex);
+    }
 }
