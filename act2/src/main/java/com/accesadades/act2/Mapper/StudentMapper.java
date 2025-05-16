@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.mapstruct.*;
 
-import com.accesadades.Modal.Student;
 import com.accesadades.act2.DTO.StudentDTO;
+import com.accesadades.act2.Modal.Student;
 
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface StudentMapper {
