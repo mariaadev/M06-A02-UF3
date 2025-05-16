@@ -1,13 +1,12 @@
 package com.accesadades.act2.Serveis;
-
-import com.accesadades.Modal.Student;
 import com.accesadades.act2.DTO.StudentDTO;
+import com.accesadades.act2.Modal.Student;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface StudentService {
-    Mono<Student> save(); 
+    Mono<Student> save(StudentDTO dto); 
     Mono<Student> findById(String id); 
     Flux<Student> findAll(); 
     Mono<Student> update(StudentDTO nom_dto);
