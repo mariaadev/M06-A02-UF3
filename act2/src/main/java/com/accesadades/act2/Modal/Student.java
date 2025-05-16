@@ -1,4 +1,4 @@
-package com.accesadades.Modal;
+package com.accesadades.act2.Modal;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
