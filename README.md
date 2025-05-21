@@ -3,30 +3,37 @@
 ### GET
 
 - **Endpoint**: `/api/v1/student/{id}`
-- ![image](screenshots/studentsID)
-- ![image](screenshots/studentsResultatID)
+- ![image](screenshots/studentsID.png)
+- ![image](screenshots/studentsResultatID.png)
 
 - **Endpoint**: `/api/v1/students/all`
-![image](screenshots/endpointGetAll)
-![image](screenshots/studentsAll)
+![image](screenshots/endpointGetAll.png)
+![image](screenshots/studentsAll.png)
 
 - **Endpoint**: `/api/v1/students/cercaBirthYear90`
-- ![image](screenshots/studentsCerca90)
-- ![image](screenshots/studentsResultatCerca90)
+
+En aquest endpoint es realitza una cerca dels estudiants nascuts en els anys 90.
+
+- ![image](screenshots/studentsCerca90.png)
+- ![image](screenshots/studentsResultatCerca90.png)
+
 
 - **Endpoint**: `/api/v1/students/cercaNameAcabatEn`
-- ![image](screenshots/studentsCercaName)
-- ![image](screenshots/studentsResultatCercaName)
+
+En aquest endpoint es realitza una cerca dels estudiants que tinguin en el seu nom el sufix proporcionat.
+
+- ![image](screenshots/studentsCercaName.png)
+- ![image](screenshots/studentsResultatCercaName.png)
 
 ### POST
 - **Endpoint**: `api/v1/students/save`
-- ![image](screenshots/studentsPOST)
-- ![image](screenshots/resultatPOST)
+- ![image](screenshots/studentsPOST.png)
+- ![image](screenshots/resultatPOST.png)
 
 ### PUT
 - **Endpoint**: `api/v1/students/update/{id}`
-- ![image](screenshots/studentsPUT)
-- ![image](screenshots/studentsResultatPUT)
+- ![image](screenshots/studentsPUT.png)
+- ![image](screenshots/studentsResultatPUT.png)
 
 ### DELETE
 - **Endpoint**: `api/v1/students/deleteStudent/{id}`
