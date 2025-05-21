@@ -40,8 +40,8 @@ public class StudentController {
         return studentService.save(studentDTO);
     }
 
-    @GetMapping("/student/{Id}")
-    public Mono<Student> cercaStudentPerId(@RequestParam String id){
+    @GetMapping("/student/{id}")
+    public Mono<Student> cercaStudentPerId(@PathVariable String id){
         return studentService.findById(id);
     }
 
@@ -55,8 +55,8 @@ public class StudentController {
         return studentService.update(dto);
     }
 
-    @DeleteMapping("/deleteStudent/{Id}")
-    public Mono<Void> deleteStudent(@RequestParam String id) {
+    @DeleteMapping("/deleteStudent/{id}")
+    public Mono<Void> deleteStudent(@PathVariable String id) {
         return studentService.delete(id);
     }
 
@@ -66,7 +66,7 @@ public class StudentController {
     }
 
     @GetMapping("/cercaNameAcabatEn")
-    public Flux<Student> cercarStudentsAcabatsEn(String sufix){
+    public Flux<Student> cercarStudentsAcabatsEn(@RequestParam String sufix){
         return studentServiceImpl.findByNameEndingWith(sufix);
     }
 

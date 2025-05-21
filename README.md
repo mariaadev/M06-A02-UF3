@@ -1,5 +1,6 @@
 # Proves
 
+
 # Preguntes de reflexió
 
 ## 1. Afegiu un endpoint que cerqui per un camp de tipus String on feu servir regex. Afegiu el que calgui al servei, repositori, etc.
@@ -29,3 +30,4 @@ No cal definir-los manualment perquè el compilador els genera automàticament.
 ## 5. Un record no cal que tingui getters i setters es pot utilitzar directament. Un record tampoc cal afegir-li un constructor perquè ja el té per defecte. 
 Exacte. Els records generen automàticament els getters, el constructor, equals(), hashCode() i toString(), de manera que només cal declarar els camps.
 A més, com que són immutables, no tenen setters, i això fa que siguin molt útils per representar dades que no han de canviar, com els DTOs en una API.
+

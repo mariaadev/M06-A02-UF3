@@ -26,5 +26,5 @@ public class Student implements Serializable {
     private String email;
     private String phone;
     private int birth_year;
-    private String DNI;
+    private String dni;
 }
