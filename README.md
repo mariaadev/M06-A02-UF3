@@ -36,7 +36,7 @@ En aquest endpoint es realitza una cerca dels estudiants que tinguin en el seu n
 
 ![image](screenshots/studentsPOST.png)
 
-![image](screenshots/resultatPOST.png)
+![image](screenshots/studentsResultatPOST.png)
 
 ### PUT
 **Endpoint**: `api/v1/students/update/{id}`
