@@ -56,8 +56,9 @@ public class StudentController {
     }
 
     @DeleteMapping("/deleteStudent/{id}")
-    public Mono<Void> deleteStudent(@PathVariable String id) {
-        return studentService.delete(id);
+    public Mono<String> deleteStudent(@PathVariable String id) {
+        return studentService.delete(id)
+          .thenReturn("Estudiant eliminat correctamente amb Id: " + id);
     }
 
     @GetMapping("/cercaBirthYear90")
