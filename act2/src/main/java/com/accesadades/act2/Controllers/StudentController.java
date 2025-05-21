@@ -50,8 +50,8 @@ public class StudentController {
         return studentService.findAll();
     }
 
-    @PutMapping("/update") 
-    public Mono<Student> updateStudent(@RequestBody StudentDTO dto) {
+    @PutMapping("/update/{id}") 
+    public Mono<Student> updateStudent(@PathVariable String id, @RequestBody StudentDTO dto) {
         return studentService.update(dto);
     }
 
