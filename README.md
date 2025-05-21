@@ -1,5 +1,37 @@
 # Proves
 
+### GET
+
+- **Endpoint**: `/api/v1/student/{id}`
+- ![image](screenshots/studentsID)
+- ![image](screenshots/studentsResultatID)
+
+- **Endpoint**: `/api/v1/students/all`
+![image](screenshots/endpointGetAll)
+![image](screenshots/studentsAll)
+
+- **Endpoint**: `/api/v1/students/cercaBirthYear90`
+- ![image](screenshots/studentsCerca90)
+- ![image](screenshots/studentsResultatCerca90)
+
+- **Endpoint**: `/api/v1/students/cercaNameAcabatEn`
+- ![image](screenshots/studentsCercaName)
+- ![image](screenshots/studentsResultatCercaName)
+
+### POST
+- **Endpoint**: `api/v1/students/save`
+- ![image](screenshots/studentsPOST)
+- ![image](screenshots/resultatPOST)
+
+### PUT
+- **Endpoint**: `api/v1/students/update/{id}`
+- ![image](screenshots/studentsPUT)
+- ![image](screenshots/studentsResultatPUT)
+
+### DELETE
+- **Endpoint**: `api/v1/students/deleteStudent/{id}`
+![image](screenshots/studentDELETE.png)
+
 
 # Preguntes de reflexió
 
