@@ -67,7 +67,7 @@ Una API reactiva és asíncrona i no bloquejant: processa les dades a mesura que
 En canvi, una API síncrona amb MVC és bloquejant: cada petició ocupa un fil fins que acaba, cosa que pot saturar el sistema si hi ha moltes connexions.
 
 ## 3. Què signifiquen Mono i Flux? Per a què penseu que serveixen i per què són útils en aquest tipus de programació?
-Mono i flux són tipus especials que són part del projecte Reactor i s’utilitzen en programació reactiva.. 
+Mono i flux són tipus especials que són part del projecte Reactor i s’utilitzen en programació reactiva.
 Mono representa que pot ser 0 o 1 element, i és útil quan esperem una sola resposta. Com per exemple quan cerquem un estudiant pel seu id.
 Flux representa que pot ser 0 0 n elements, i és útil quan esperem una llista de respostes. Com per exemple quan volem llistar tots els estudiants o cerquem quins estudiants van neixer en els 90.
 Són útils perquè permeten manipular dades de forma funcional (amb map, filter, etc.) i gestionar fàcilment les operacions asíncrones, com per exemple, encadenar crides sense bloquejar fils del sistema.
